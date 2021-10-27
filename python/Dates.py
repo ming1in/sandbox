@@ -35,7 +35,6 @@ def nextNbirthday(month, day, n):
     for i in range(n):
         next_birthday = datetime.datetime(current_year + i, month, day)
         weekday = next_birthday.strftime("%A")
-        print(weekday)
         
         if weekday == "Saturday" or weekday == "Sunday":
           result.append([next_birthday.year, weekday])
